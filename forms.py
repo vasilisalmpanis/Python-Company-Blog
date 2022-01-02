@@ -6,26 +6,26 @@ from flask_ckeditor import CKEditorField
 
 ##WTForm
 class CreatePostForm(FlaskForm):
-    title = StringField("Blog Post Title", validators=[DataRequired()])
-    subtitle = StringField("Subtitle", validators=[DataRequired()])
-    img_url = StringField("Blog Image URL", validators=[DataRequired(), URL()])
-    body = CKEditorField("Blog Content", validators=[DataRequired()])
-    submit = SubmitField("Submit Post")
+    title = StringField("Τίτλος Blog", validators=[DataRequired()])
+    subtitle = StringField("Υπότιτλος", validators=[DataRequired()])
+    img_url = StringField(" Εικόνα Blog", validators=[DataRequired(), URL()])
+    body = CKEditorField("Περιεχόμενο", validators=[DataRequired()])
+    submit = SubmitField("Υποβολή Άρθρου")
 
 
 class RegisterForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired()])
-    password = PasswordField("Password", validators=[DataRequired()])
-    name = StringField("Name", validators=[DataRequired()])
-    submit = SubmitField("Sign Me Up!")
+    password = PasswordField("Κωδικός", validators=[DataRequired()])
+    name = StringField("Όνομα", validators=[DataRequired()])
+    submit = SubmitField("Εγγραφή!")
 
 
 class LoginForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired()])
-    password = PasswordField("Password", validators=[DataRequired()])
-    submit = SubmitField("Let Me In!")
+    password = PasswordField("Κωδικός", validators=[DataRequired()])
+    submit = SubmitField("Επαλήθευση")
 
 
 class CommentForm(FlaskForm):
-    comment_text = CKEditorField("Comment", validators=[DataRequired()])
-    submit = SubmitField("Submit Comment")
+    comment_text = CKEditorField("Σχόλιο", validators=[DataRequired()])
+    submit = SubmitField("Υποβολή Σχολίου")
