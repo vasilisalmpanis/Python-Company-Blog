@@ -2,6 +2,10 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField
 from wtforms.validators import DataRequired, URL
 from flask_ckeditor import CKEditorField
+import pandas as pd
+import lxml
+import openpyxl
+
 
 
 ##WTForm
@@ -29,3 +33,5 @@ class LoginForm(FlaskForm):
 class CommentForm(FlaskForm):
     comment_text = CKEditorField("Σχόλιο", validators=[DataRequired()])
     submit = SubmitField("Υποβολή Σχολίου")
+
+
