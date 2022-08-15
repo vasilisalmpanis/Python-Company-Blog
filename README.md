@@ -1,6 +1,6 @@
 # Completed Python Web Project
 
-A basic blog I created using flask for the company I work for, called Heliades Farming Solutions. It is a farm consulting company that specializes in small ruminants 
+A basic blog I created using flask for the company I work for, called Heliades Farming Solutions. It is a farm consulting company that specializes in small ruminants.
 
 ## Description
 
