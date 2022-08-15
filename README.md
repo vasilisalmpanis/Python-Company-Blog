@@ -9,4 +9,3 @@ I used Flask and Sqlalchemy to create a functional responsive website where user
 ## Help
 
 Any advise for common problems or issues.
-```
