@@ -12,4 +12,4 @@ Any advise for common problems or issues.
 
 ## Link
 
-<a href="http://vasilis-blog.herokuapp.com/">Heliades Farming Solutions text</a>
+<a href="http://vasilis-blog.herokuapp.com/">Heliades Farming Solutions</a>
