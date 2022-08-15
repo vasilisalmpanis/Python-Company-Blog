@@ -1,1 +1,1 @@
-<h1> Completed Python Web Project
+<h1 align="center> Completed Python Web Project
