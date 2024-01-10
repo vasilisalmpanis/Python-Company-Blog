@@ -10,12 +10,12 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            {% if is_edit: %}
+            {% if is_edit %}
             <h1>Edit Post</h1>
-            {% else: %}
+            {% else %}
             <h1>New Post</h1>
             {% endif %}
-            <span class="subheading">Γράψε εδώ το νέο ποστ σου</span>
+            <span class="subheading">Write your new post here</span>
           </div>
         </div>
       </div>
@@ -34,8 +34,3 @@
 
 {% include "footer.html" %}
 {% endblock %}
-
-
-
-
-
