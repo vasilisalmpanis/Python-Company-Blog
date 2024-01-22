@@ -1,34 +1,34 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField
-from wtforms.validators import DataRequired, URL
+from wtforms.validators import DataRequired, URL, Email
 from flask_ckeditor import CKEditorField
 
 
 
 ##WTForm
 class CreatePostForm(FlaskForm):
-    title = StringField("Τίτλος Blog", validators=[DataRequired()])
-    subtitle = StringField("Υπότιτλος", validators=[DataRequired()])
-    img_url = StringField(" Εικόνα Blog", validators=[DataRequired(), URL()])
-    body = CKEditorField("Περιεχόμενο", validators=[DataRequired()])
-    submit = SubmitField("Υποβολή Άρθρου")
+    title = StringField("Blog Title", validators=[DataRequired()])
+    subtitle = StringField("Description", validators=[DataRequired()])
+    img_url = StringField("Blog Image", validators=[DataRequired(), URL()])
+    body = CKEditorField("Content", validators=[DataRequired()])
+    submit = SubmitField("Submit Post")
 
 
 class RegisterForm(FlaskForm):
-    email = StringField("Email", validators=[DataRequired()])
-    password = PasswordField("Κωδικός", validators=[DataRequired()])
-    name = StringField("Όνομα", validators=[DataRequired()])
-    submit = SubmitField("Εγγραφή!")
+    email = StringField("Email", validators=[DataRequired(), Email()])
+    password = PasswordField("Password", validators=[DataRequired()])
+    name = StringField("Username", validators=[DataRequired()])
+    submit = SubmitField("Register!")
 
 
 class LoginForm(FlaskForm):
-    email = StringField("Email", validators=[DataRequired()])
-    password = PasswordField("Κωδικός", validators=[DataRequired()])
-    submit = SubmitField("Επαλήθευση")
+    email = StringField("Email", validators=[DataRequired(), Email()])
+    password = PasswordField("Password", validators=[DataRequired()])
+    submit = SubmitField("Login")
 
 
 class CommentForm(FlaskForm):
-    comment_text = CKEditorField("Σχόλιο", validators=[DataRequired()])
-    submit = SubmitField("Υποβολή Σχολίου")
+    comment_text = CKEditorField("Comment", validators=[DataRequired()])
+    submit = SubmitField("Submit Comment")
 
 
